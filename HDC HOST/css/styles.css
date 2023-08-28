@@ -1,0 +1,435 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Helvetica;
+}
+
+body {
+  padding-bottom: 75px;
+}
+
+button {
+  cursor: pointer;
+  background-color: #2cc76a;
+  border-radius: 10px;
+  border: none;
+}
+
+a {
+  text-decoration: none;
+  color: #ddd;
+}
+
+.navbar {
+  width: 100%;
+  background-color: #232a31;
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+}
+
+.navbar .items {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 40px;
+}
+
+.navbar img {
+  height: 50px;
+}
+
+.navbar button {
+  width: 100px;
+  height: 100%;
+  padding: 1rem;
+  color: white;
+  transition: 0.1s;
+  opacity: 0.8;
+}
+
+.navbar button:hover {
+  opacity: 1;
+}
+
+.banner {
+  background-image: url("../imgs/mainbanner.png");
+  background-size: cover;
+  background-position: center;
+  padding: 10rem 0;
+}
+
+.banner .title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 2rem;
+  text-shadow: #000 3px 2px 3px;
+}
+
+.infos {
+  padding: 4rem;
+  display: flex;
+  gap: 20px;
+}
+
+.infos article i {
+  font-size: 4rem;
+}
+
+.infos article {
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.fa-shield-alt {
+  color: #2cc76a;
+}
+
+.fa-rocket {
+  color: #ef3f29;
+}
+
+.fa-comments {
+  color: #ef8f29;
+}
+
+.infos article h3 {
+  margin-top: 15px;
+  color: #333;
+}
+
+.infos article p {
+  margin-top: 15px;
+  color: #70747a;
+  text-align: center;
+  line-height: 1.5rem;
+}
+
+.signatures-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0 4rem;
+}
+
+.signatures-container h2 {
+  font-size: 36px;
+}
+
+.signatures-container p {
+  font-size: 20px;
+}
+
+.signatures {
+  width: 100%;
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.signatures article {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  min-width: 275px;
+}
+
+.price {
+  width: 120px;
+  height: 120px;
+  color: white;
+  background-color: #2cc76a;
+  border-radius: 100%;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 0;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.plan-name {
+  height: 100px;
+  background-color: #232a31;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: end;
+  position: relative;
+  bottom: 50px;
+  z-index: -1;
+  font-weight: bold;
+  font-size: 20px;
+  padding: 1rem;
+  text-align: center;
+}
+
+.benefits-container {
+  background-color: #e8e9ea;
+  position: relative;
+  bottom: 50px;
+  text-align: center;
+  line-height: 50px;
+  color: #333333;
+}
+
+.benefits-container p {
+  font-size: 16px;
+}
+
+.more-content {
+  background-color: #2cc76a;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  bottom: 50px;
+  height: 75px;
+  color: white;
+  font-size: 24px;
+}
+
+.red-content {
+  background-color: #f45c57;
+}
+
+.searchdomain-container {
+  background-color: #34454e;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 5rem 20px;
+}
+
+.searchdomain-container h1 {
+  font-size: 42px;
+  text-align: center;
+  color: white;
+}
+
+.searchdomain-container p {
+  font-size: 24px;
+  color: #d5d5d5;
+  margin-top: 15px;
+}
+
+.searchdomain-container input {
+  width: 50%;
+  padding: 1.5rem;
+  border-radius: 10px;
+  outline: none;
+  border: none;
+  margin-top: 20px;
+  font-size: 20px;
+}
+
+.searchdomain-container button {
+  width: 17%;
+  padding: 1rem 10px;
+  margin-top: 20px;
+  color: white;
+  font-size: 24px;
+}
+
+.contact-container {
+  padding: 75px 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact-container h1 {
+  font-size: 36px;
+  color: #333333;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.contact-container p {
+  font-size: 20px;
+  text-align: center;
+  color: #70747a;
+  margin-bottom: 2rem;
+}
+
+.contact-container form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+
+.contact-inputs {
+  width: 40%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.contact-inputs input {
+  font-size: 18px;
+  padding: 1rem;
+  border-radius: 10px;
+  border: 1px solid #d1d0d0;
+}
+
+.contact-container textarea {
+  width: 40%;
+  font-size: 18px;
+  height: 200px;
+  padding: 1rem;
+  border-radius: 5px;
+  border: 1px solid #d1d0d0;
+}
+
+.contact-container button {
+  width: 40%;
+  padding: 0.5rem 0.8rem;
+  font-size: 20px;
+  border-radius: 5px;
+  color: white;
+}
+
+#final-text {
+  text-align: center;
+  color: #70747a;
+  font-weight: bold;
+}
+
+@media (max-width: 1300px) {
+  .signatures article {
+    min-width: unset;
+    width: 200px;
+  }
+}
+
+@media (max-width: 960px) {
+  .banner {
+    padding: 10rem 20px;
+    text-align: center;
+  }
+
+  .signatures-container {
+    padding: 0;
+    margin: 0px 20px 0px 20px;
+  }
+
+  .signatures {
+    gap: 20px;
+  }
+  .plan-name {
+    font-size: 14px;
+  }
+
+  .searchdomain-container button {
+    font-size: 15px;
+    width: 52%;
+  }
+
+  .benefits-container p {
+    font-size: 13px;
+  }
+  .more-content {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 590px) {
+  .navbar {
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+  }
+
+  .navbar img {
+    width: 30%;
+    height: 93px;
+  }
+
+  .items {
+    margin-top: 20px;
+    font-size: 16px;
+  }
+
+  .items button {
+    padding: 10px;
+    font-size: 1=6px;
+  }
+
+  .infos {
+    flex-direction: column;
+  }
+
+  .signatures {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .signatures article {
+    width: 100%;
+  }
+
+  .signatures article p {
+    font-size: 16px;
+  }
+
+  .plan-name {
+    font-size: 20px;
+  }
+
+  .price {
+    font-weight: normal;
+  }
+
+  .more-content {
+    font-size: 30px;
+  }
+
+  .searchdomain-container h1 {
+    font-size: 30px;
+  }
+
+  .searchdomain-container p {
+    text-align: center;
+    font-size: 30px;
+  }
+
+  .searchdomain-container input {
+    padding: 15px;
+    font-size: 16px;
+  }
+
+  .searchdomain-container button {
+    font-size: 15px;
+    width: 52%;
+  }
+
+  .contact-inputs {
+    flex-direction: column;
+    gap: 20px;
+    width: 70%;
+  }
+
+  .contact-container textarea {
+    width: 70%;
+  }
+}
+
+@media (max-width: 380px) {
+  .items {
+    flex-direction: column;
+  }
+}
